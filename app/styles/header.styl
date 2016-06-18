@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "nib"
+@import "_vars.styl"
+@import "fonts.styl"
+/*RESET BROWSER'S STYLES*/
+global-reset()  //reset.css
+//or
+//@import "normalize.css"; 
+
+
+/*BASIC STYLES*/
+.clearfix
+  clearfix()
+
+* 
+  box-sizing border-box
+  
+html
+  font-size 100%
+  
+body
+  min-width 320px
+  color $base-font-color
+  font-size $base-font-size
+  line-height 1.6
+  font-family: "RobotoRegular", sans-serif
+  overflow-x: hidden
+  font-smoothing antialiased
+  scroll-behavior smooth
+
+/*FOOTER TO BOTTOM*/
+html, body
+  height 100%
+
+.wrap
+  min-height 100%
+  main
+    padding-bottom 100px
+
+footer
+  height 100px
+  margin-top -100px
+/*footer end*/
+
+/*============================================*/
+
+//Custom Styles Here
+header
+  background-color #87c6c3
+
+main
+  background-color #dad5e0
+  
+footer
+  height 100px
+  background-color #b54e7e
+
